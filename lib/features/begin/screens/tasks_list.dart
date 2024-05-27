@@ -43,8 +43,8 @@ class _TasksListState extends State<TasksList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Tareas'),
+        backgroundColor: const Color.fromARGB(255, 51, 145, 193),
+        title: const Text('Tareas'),
         centerTitle: true,
         actions: <Widget>[
           IconButton(
@@ -93,7 +93,7 @@ class _TasksListState extends State<TasksList> {
                               child: Icon(Icons.check),
                             )
                           : CircleAvatar(
-                              child: Icon(Icons.delete),
+                              child: Icon(Icons.access_alarm_outlined),
                             ),
                       title: Text(titulo),
                       subtitle: Text(fecha),

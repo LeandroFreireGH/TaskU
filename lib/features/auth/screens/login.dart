@@ -25,8 +25,8 @@ class TaskU2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Log_In'),
+        backgroundColor: const Color.fromARGB(255, 51, 145, 193),
+        title: const Text('Log_In'),
       ),
       body: SingleChildScrollView(
         padding:
@@ -49,6 +49,21 @@ class TaskU2 extends StatelessWidget {
                 border: OutlineInputBorder(),
                 labelText: 'Contraseña',
               ),
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SignInUI()),
+                );
+              },
+              child: const Row(children: [
+                Text("Registrar si no tiene cuenta"),
+                SizedBox(
+                  width: 8,
+                ),
+                Icon(Icons.app_registration_sharp),
+              ]),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
@@ -81,15 +96,6 @@ class TaskU2 extends StatelessWidget {
             ),
           ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => SignInUI()),
-          );
-        },
-        child: const Icon(Icons.app_registration_sharp),
       ),
     );
   }

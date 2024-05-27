@@ -16,8 +16,8 @@ class _SignInUI extends State<SignInUI> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Sign_In'),
+        backgroundColor: const Color.fromARGB(255, 51, 145, 193),
+        title: const Text('Registrarse'),
       ),
       body: SingleChildScrollView(
         padding:

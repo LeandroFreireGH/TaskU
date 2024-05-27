@@ -31,8 +31,8 @@ class _ModifieUI extends State<ModifieUi> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text('Administrar Tarea'),
+        backgroundColor: const Color.fromARGB(255, 51, 145, 193),
+        title: const Text('Administrar Tarea'),
       ),
       body: SingleChildScrollView(
         padding:
